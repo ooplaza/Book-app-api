@@ -57,5 +57,4 @@ Detailed error responses with status codes and messages are provided.
 5. Your request will be reviewed and merged if approved.
 
 ## License
-
-This project is under the MIT License. See `LICENSE.md` for details.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
