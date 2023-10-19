@@ -13,9 +13,9 @@ class BookViewSet(ModelViewSet):
 
     def get_queryset(self):
         """
-        :return: Books
+        :return: a random book objects
         """
-        queryset = Book.objects.filter(release_year__lt=20)
+        queryset = Book.objects.order_by('?')
         return queryset
 
     def get_object(self):
