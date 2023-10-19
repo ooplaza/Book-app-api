@@ -7,7 +7,7 @@ from . models import Book
 
 # Create your views here.
 class BookViewSet(ModelViewSet):
-    http_method_names = ['get', 'post']
+    http_method_names = ['get']
     permission_classes = [IsAuthenticatedOrReadOnly]
     serializer_class = BookSerializer
 
