@@ -6,7 +6,6 @@ router = SimpleRouter()
 router.register(r"books", BookViewSet, basename='book-list')
 
 # Viewsets
-
 urlpatterns = [
     *router.urls
 ]

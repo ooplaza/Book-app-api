@@ -50,7 +50,10 @@ INSTALLED_APPS = [
     # Dev Installed Application
     'core.apps.CoreConfig',
     'core.book',
-    'core.user'
+    'core.user',
+
+    # RESTful API Documentation
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -115,11 +118,20 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.AllowAny",
     ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_FILTER_BACKENDS':
         ['django_filters.rest_framework.DjangoFilterBackend'],
     'DEFAULT_PAGINATION_CLASS':
         'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 1000,
+    'PAGE_SIZE': 100,
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'FakeBook API',
+    'DESCRIPTION': 'FakeBook API description',
+    'VERSION': '1.0.0',
+    # 'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
 }
 
 # Password validation
