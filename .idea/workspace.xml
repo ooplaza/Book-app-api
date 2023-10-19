@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Added scripts for creating Book model" />
+    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Added scripts for creating Book model">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreRoot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreRoot/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="development" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,12 +34,14 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "development",
     "last_opened_file_path": "D:/PycharmProjects/Book-app-api/core",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -57,6 +63,8 @@
       <updated>1697694048593</updated>
       <workItem from="1697694053442" duration="511000" />
       <workItem from="1697694658876" duration="350000" />
+      <workItem from="1697696048501" duration="107000" />
+      <workItem from="1697696165898" duration="520000" />
     </task>
     <task id="LOCAL-00001" summary="Added scripts for creating Book model">
       <created>1697694514024</created>
