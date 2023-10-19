@@ -4,11 +4,11 @@ import pandas as pd
 
 def run():
     df = pd.read_csv("./Datasets/Books.csv", low_memory=False)
-    for index, data in enumerate(df["RELEASE_YEAR"]):
-        if data == 'Gallimard':
+    for index, data in enumerate(df["PUBLISHER"]):
+        if data == 'Unknown':
             print(f"{index} - {data}")
-            df.loc[index, "RELEASE_YEAR"] = 2000
-    df.to_csv("Books.csv", index=False)
+            # df.loc[index, "RELEASE_YEAR"] = rn.randint(1806, 2020)
+    # df.to_csv("Books.csv", index=False)
     print("Finished!")
 
 # def run():
