@@ -1,0 +1,161 @@
+openapi: 3.0.3
+info:
+  title: FakeBook API
+  version: 1.0.0
+  description: FakeBook API description
+paths:
+  /api/books/:
+    get:
+      operationId: api_books_list
+      parameters:
+      - name: limit
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      - name: offset
+        required: false
+        in: query
+        description: The initial index from which to return the results.
+        schema:
+          type: integer
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedBookList'
+          description: ''
+    post:
+      operationId: api_books_create
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Book'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Book'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+          description: ''
+  /api/books/{id}/:
+    get:
+      operationId: api_books_retrieve
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this book.
+        required: true
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+          description: ''
+components:
+  schemas:
+    Book:
+      type: object
+      properties:
+        title:
+          type: string
+          maxLength: 255
+        public_id:
+          type: string
+          format: uuid
+          readOnly: true
+        ISBN:
+          type: string
+          maxLength: 20
+        release_year:
+          type: integer
+        publisher:
+          type: string
+          maxLength: 255
+        thumbnail:
+          type: string
+          format: uri
+          maxLength: 200
+        ratings:
+          type: number
+          format: double
+        price:
+          type: number
+          format: double
+        author:
+          type: string
+          maxLength: 255
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+        updated:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+      - ISBN
+      - author
+      - created
+      - public_id
+      - thumbnail
+      - title
+      - updated
+    PaginatedBookList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=400&limit=100
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=200&limit=100
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Book'
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid
