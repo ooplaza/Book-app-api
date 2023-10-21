@@ -121,7 +121,7 @@ WSGI_APPLICATION = 'CoreRoot.wsgi.application'
 # Elephant SQL
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get('ENGINE'),
+        'ENGINE': "django.db.backends.postgresql",
         'NAME': os.environ.get('NAME'),
         'USER': os.environ.get('USER'),
         'PASSWORD': os.environ.get('PASSWORD'),
