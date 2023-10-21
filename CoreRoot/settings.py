@@ -24,8 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ.get('SECRET_KEY')
-SECRET_KEY = "django-insecure-g+as%-j9v2$*hws%7y5l9_3q9!jr+fuco)7rzhz*wq1lgajg+$6_%jeb_3q_&j1pmea"
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG") == "False"
@@ -121,7 +120,7 @@ WSGI_APPLICATION = 'CoreRoot.wsgi.application'
 # Elephant SQL
 DATABASES = {
     'default': {
-        'ENGINE': "django.db.backends.postgresql",
+        'ENGINE': os.environ.get('ENGINE'),
         'NAME': os.environ.get('NAME'),
         'USER': os.environ.get('USER'),
         'PASSWORD': os.environ.get('PASSWORD'),
