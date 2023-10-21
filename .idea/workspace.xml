@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Migrations added">
-      <change afterPath="$PROJECT_DIR$/build_files.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Added production settings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreRoot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoreRoot/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +68,7 @@
       <workItem from="1697696165898" duration="520000" />
       <workItem from="1697778852122" duration="3585000" />
       <workItem from="1697802648840" duration="7502000" />
-      <workItem from="1697867908141" duration="1161000" />
+      <workItem from="1697867908141" duration="1838000" />
     </task>
     <task id="LOCAL-00001" summary="Added scripts for creating Book model">
       <created>1697694514024</created>
@@ -164,7 +161,28 @@
       <option name="project" value="LOCAL" />
       <updated>1697875736482</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added production settings">
+      <created>1697876208110</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697876208110</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added production settings">
+      <created>1697876223397</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697876223397</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added production settings">
+      <created>1697876231596</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697876231596</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +214,7 @@
     <MESSAGE value="Changed max_length size" />
     <MESSAGE value="Added environment variable" />
     <MESSAGE value="Migrations added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrations added" />
+    <MESSAGE value="Added production settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added production settings" />
   </component>
 </project>
