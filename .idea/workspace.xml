@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Changed max_length size">
+    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Migrations added">
+      <change afterPath="$PROJECT_DIR$/build_files.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoreRoot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreRoot/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,24 +32,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/Book-app-api/core&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "development",
+    "last_opened_file_path": "D:/PycharmProjects/Book-app-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\Book-app-api" />
       <recent name="D:\PycharmProjects\Book-app-api\core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -67,7 +71,7 @@
       <workItem from="1697696165898" duration="520000" />
       <workItem from="1697778852122" duration="3585000" />
       <workItem from="1697802648840" duration="7502000" />
-      <workItem from="1697867908141" duration="887000" />
+      <workItem from="1697867908141" duration="1161000" />
     </task>
     <task id="LOCAL-00001" summary="Added scripts for creating Book model">
       <created>1697694514024</created>
@@ -146,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1697875609027</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added environment variable">
+      <created>1697875703008</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697875703008</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Migrations added">
+      <created>1697875736482</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697875736482</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +194,8 @@
     <MESSAGE value="Remost post request" />
     <MESSAGE value="Change for loop design" />
     <MESSAGE value="Changed max_length size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed max_length size" />
+    <MESSAGE value="Added environment variable" />
+    <MESSAGE value="Migrations added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrations added" />
   </component>
 </project>
