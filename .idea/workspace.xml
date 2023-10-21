@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Added scripts for creating Book model">
+    <list default="true" id="dbfe0c37-5fab-45a3-819e-31642ddf450d" name="Changes" comment="Migrations added">
+      <change afterPath="$PROJECT_DIR$/build_files.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoreRoot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreRoot/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreRoot/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreRoot/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +37,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "development",
-    "last_opened_file_path": "D:/PycharmProjects/Book-app-api/core",
+    "last_opened_file_path": "D:/PycharmProjects/Book-app-api",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\Book-app-api" />
       <recent name="D:\PycharmProjects\Book-app-api\core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -65,6 +69,9 @@
       <workItem from="1697694658876" duration="350000" />
       <workItem from="1697696048501" duration="107000" />
       <workItem from="1697696165898" duration="520000" />
+      <workItem from="1697778852122" duration="3585000" />
+      <workItem from="1697802648840" duration="7502000" />
+      <workItem from="1697867908141" duration="1161000" />
     </task>
     <task id="LOCAL-00001" summary="Added scripts for creating Book model">
       <created>1697694514024</created>
@@ -80,14 +87,115 @@
       <option name="project" value="LOCAL" />
       <updated>1697694719046</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated router">
+      <created>1697737379372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697737379372</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added docs">
+      <created>1697737398132</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697737398132</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added new package">
+      <created>1697737410864</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697737410864</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Improved book serializer">
+      <created>1697737433665</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697737433665</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added docs routes">
+      <created>1697737453483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697737453483</updated>
+    </task>
+    <task id="LOCAL-00008" summary="randomized fetching book objects">
+      <created>1697737475413</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697737475413</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Remost post request">
+      <created>1697740850464</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697740850464</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change for loop design">
+      <created>1697875573459</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697875573459</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changed max_length size">
+      <created>1697875609027</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697875609027</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added environment variable">
+      <created>1697875703008</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697875703008</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Migrations added">
+      <created>1697875736482</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697875736482</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added scripts for creating Book model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added scripts for creating Book model" />
+    <MESSAGE value="Settings configures" />
+    <MESSAGE value="workspace" />
+    <MESSAGE value="Updated router" />
+    <MESSAGE value="Added docs" />
+    <MESSAGE value="Added new package" />
+    <MESSAGE value="Improved book serializer" />
+    <MESSAGE value="Added docs routes" />
+    <MESSAGE value="randomized fetching book objects" />
+    <MESSAGE value="Remost post request" />
+    <MESSAGE value="Change for loop design" />
+    <MESSAGE value="Changed max_length size" />
+    <MESSAGE value="Added environment variable" />
+    <MESSAGE value="Migrations added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrations added" />
   </component>
 </project>
