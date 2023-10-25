@@ -70,6 +70,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
+    # Per-Site Caching
+    "django.middleware.cache.UpdateCacheMiddleware",
+    # Caching
+    "django.middleware.cache.FetchFromCacheMiddleware",
+
     # Debug Toolbar
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 
@@ -141,6 +146,11 @@ REST_FRAMEWORK = {
         'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 100,
 }
+
+# Per-Site Caching (1 Week)
+CACHE_MIDDLEWARE_ALIAS = "default"
+CACHE_MIDDLEWARE_SECONDS = 604800
+CACHE_MIDDLEWARE_KEY_PREFIX = ""
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Read Craft API',
